@@ -1,0 +1,11 @@
+.bg-color{
+    background: rgb(32,133,165);
+background: linear-gradient(90deg, rgba(32,133,165,1) 0%, rgba(108,232,255,1) 100%);
+   padding: 6px 20px;
+
+}
+.hover-color:hover{
+    background: rgb(32,133,165);
+background: linear-gradient(90deg, rgba(32,133,165,1) 0%, rgba(108,232,255,1) 100%);
+border-radius: 2px;
+}
