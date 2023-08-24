@@ -5,7 +5,7 @@ Welcome to Dream Explorer Travel Agency! 🌍✈️
 ![Dream Explorer Banner](https://i.ibb.co/SrGJBRq/Screenshot.png)
 Live Link: 'https://dream-explorer-10095.web.app/'
 
-Explore the world with us and turn your travel dreams into reality. Dream Explorer is a cutting-edge travel agency that specializes in curating exceptional travel experiences. Whether you're seeking a relaxing beach getaway, an adventure-packed track, or a cultural immersion, we've got you covered.
+Explore the world with us and turn your travel dreams into reality. Dream Explorer is a cutting-edge travel agency that specializes in curating exceptional travel experiences. Whether you're seeking a relaxing beach getaway, an adventure-packed track, we've got you covered.
 
 ## Features
 
