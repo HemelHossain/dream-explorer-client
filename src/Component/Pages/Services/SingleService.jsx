@@ -6,14 +6,14 @@ import { FaLocationDot, FaOdnoklassniki } from "react-icons/fa6";
 const SingleService = () => {
     const {_id, title, imageUrl, time, location, price, activities, description}  = useLoaderData();
     return (
-        <div className='mx-20 mt-20'>
-            <div className="card card-compact bg-base-100 shadow-xl p-4">
-  <figure><img className=' rounded h-96 object-cover' src={imageUrl} alt="Shoes" /></figure>
+        <div className='mx-20 mt-20 xs:mx-4'>
+            <div className="card card-compact bg-base-100 shadow-xl p-4 xs:px-0">
+  <figure><img className=' rounded h-96 object-cover xs:px-2' src={imageUrl} alt="Shoes" /></figure>
   <div className="card-body">
     <h2 className="card-title text-3xl">{title}</h2>
     <div className='flex space-x-9 text-lg md:text-xl sm:text-sm'>
-        <h2 className="flex items-center"><HiCalendar className='md:text-xl sm:text-sm mr-1' /> {time}</h2>
-        <h2 className="flex items-center"><FaLocationDot className='text-red-600 md:text-base sm:text-sm mr-1' /> {location}</h2>
+        <h2 className="flex xs:text-base items-center"><HiCalendar className='md:text-xl sm:text-sm mr-1' /> {time}</h2>
+        <h2 className="flex xs:text-base items-center"><FaLocationDot className='text-red-600 md:text-base sm:text-base mr-1' /> {location}</h2>
         <h2 className="text-sm flex items-center"><FaOdnoklassniki className='sm:text-sm' />activities  {activities}</h2>
     </div>
     <p className='md:text-lg sm:text-base text-justify'>{description}</p>

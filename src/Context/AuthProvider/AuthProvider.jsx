@@ -10,37 +10,40 @@ const AuthProvider = ({children}) => {
     const provider = new GoogleAuthProvider();
 
 
-
+        //    User Create 
     const createUser = (email, password) =>{
         setLoading(true);
         return createUserWithEmailAndPassword(auth, email, password);
     }
 
+            //    User Sign In
     const signIn = (email, password) =>{
         setLoading(true);
         return signInWithEmailAndPassword(auth, email, password);
     }
-
+                // after login Email verification 
     const emailVerify = () =>{
         setLoading(true);
         return sendEmailVerification(auth.currentUser);
     }
-
+                // User login by Google 
     const googleSignIn = () =>{
         setLoading(true);
         return signInWithPopup(auth, provider);
 
     }
 
+            //    profile pic & name update 
     const profileUpdate = (profile) =>{
         setLoading(true);
         return updateProfile(auth.currentUser, profile);
     }
-
+                //   Log Out 
     const logOut = () =>{
         return signOut(auth);
     }
-
+                    
+                // focus on login & set User 
     useEffect(() =>{
         const unSubscribe = onAuthStateChanged(auth,(currentUser) =>{
             if(currentUser === null || currentUser.emailVerified === true){

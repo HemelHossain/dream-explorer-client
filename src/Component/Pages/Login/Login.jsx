@@ -9,7 +9,7 @@ const Login = () => {
     const location = useLocation();
     const navigate = useNavigate();
     const from = location.state?.from?.pathname || '/';
-    
+               
     const handleSignIn = () =>{
         event.preventDefault();
         const form = event.target;
@@ -27,6 +27,7 @@ const Login = () => {
 
     }
 
+            //  Google sign in 
     const handleGoogleSignIn = () =>{
         googleSignIn()
         .then(result => {
@@ -39,7 +40,7 @@ const Login = () => {
     return (
         <div>
             <Helmet>
-                <title>Dream Explorer Log in</title>
+                <title>Dream Explorer Login</title>
             </Helmet>
             <div className='w-2/5 mx-auto my-24 '>
                 <form onSubmit={handleSignIn} className='bg-gray-100 shadow-lg w-full rounded-xl p-5' action="">

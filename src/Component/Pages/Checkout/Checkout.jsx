@@ -28,6 +28,8 @@ const Checkout = () => {
                 message
         }
 
+
+                    // Order Information 
         fetch('https://dream-explorer-server.vercel.app/orders', {
             method: 'POST',
             headers: {
@@ -48,7 +50,7 @@ const Checkout = () => {
 
     }
     return (
-        <div className='md:mx-24 sm:mx-16'>
+        <div className='md:mx-24 sm:mx-16 xs:mx-4'>
             <form onSubmit={handlePlaceOrder}>
                 <h4 className="text-4xl mt-20">You are about to
                  book: {title} tour Package </h4>

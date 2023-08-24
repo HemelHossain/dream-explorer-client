@@ -17,6 +17,8 @@ const AddService = () => {
 
         const service = {title, imageUrl, location, price, rating, transfer, activities, time, description};
 
+
+                    //    Home page Service add 
         fetch('https://dream-explorer-server.vercel.app/services', {
             method: 'POST',
             headers: {
@@ -41,7 +43,7 @@ const AddService = () => {
             <Helmet>
                 <title>Dream Explorer Add Service</title>
             </Helmet>
-            <div className='md:mx-24 sm:mx-16'>
+            <div className='md:mx-24 sm:mx-16 xs:m-4'>
             <form onSubmit={handleAddService}>
                 <h4 className="text-4xl mt-28 sm:mt-32">Adding a service </h4>
                 <div className='grid  sm:grid-cols-1 mt-3'>

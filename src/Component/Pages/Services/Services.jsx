@@ -10,9 +10,9 @@ const Services = () => {
     }, []) 
     return (
         <div className='max-w-screen-lg mx-auto mt-28'>
-            <h4 className='text-color md:text-left md:text-lg sm:text-base sm:text-center'>CHOOSE YOUR PLACE</h4>
-            <h2 className='md:text-left md:text-6xl sm:text-4xl font-extrabold sm:text-center'>POPULAR <span className='text-color'>TOURS</span></h2>
-            <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 mt-4'>
+            <h4 className='text-color md:text-left md:text-lg sm:text-base sm:text-center xs:ml-8'>CHOOSE YOUR PLACE</h4>
+            <h2 className='md:text-left md:text-6xl sm:text-4xl font-extrabold sm:text-center xs:ml-8'>POPULAR <span className='text-color'>TOURS</span></h2>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 mt-4 xs:mt-0'>
             {
                 servicesData.map(service => <ServiceCard key={service._id} service={service}></ServiceCard>)
             }

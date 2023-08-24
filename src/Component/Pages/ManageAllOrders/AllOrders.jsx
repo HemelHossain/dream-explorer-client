@@ -12,6 +12,8 @@ const AllOrders = () => {
         .then(data => setOrders(data))
     }, [])
 
+
+            // Data Delete 
     const handleDelete = (id) =>{
         const procced = window.confirm('Are you sure you want to Delete this order');
         if(procced){
@@ -28,6 +30,9 @@ const AllOrders = () => {
         })
         }
     }
+
+
+            //    Data Update 
     const handleUpdate = (id) =>{
         fetch(`https://dream-explorer-server.vercel.app/orders/${id}`, {
             method: 'PATCH',
