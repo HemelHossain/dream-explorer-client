@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaGoogle, FaFacebookF, FaTwitter, FaGithub } from "react-icons/fa";
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
+import { Helmet } from 'react-helmet-async';
 
 const Login = () => {
     const {signIn, googleSignIn} = useContext(AuthContext);
@@ -37,6 +38,9 @@ const Login = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Dream Explorer Log in</title>
+            </Helmet>
             <div className='w-2/5 mx-auto my-24 '>
                 <form onSubmit={handleSignIn} className='bg-gray-100 shadow-lg w-full rounded-xl p-5' action="">
                     <h1 className='text-2xl text-center font-bold mb-4'>Login to Account</h1>

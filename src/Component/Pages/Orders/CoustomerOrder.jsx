@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 import OrderRow from './OrderRow';
+import { Helmet } from 'react-helmet-async';
 
 const CoustomerOrder = () => {
     const {users} = useContext(AuthContext);
@@ -29,7 +30,11 @@ const CoustomerOrder = () => {
         
     }
     return (
-        <div className='mt-32 mx-12'>
+        <div>
+            <Helmet>
+                <title>Dream Explorer My Orders</title>
+            </Helmet>
+            <div className='mt-32 mx-12'>
             <h4 className='text-xl mb-3'>ORDERS: {orders.length}</h4>
             <div className="overflow-x-auto">
   <table className="table">
@@ -50,6 +55,7 @@ const CoustomerOrder = () => {
         }
     </tbody>
     </table>
+        </div>
         </div>
         </div>
     );

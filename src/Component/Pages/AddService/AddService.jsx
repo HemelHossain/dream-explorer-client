@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const AddService = () => {
     const handleAddService = () =>{
@@ -36,7 +37,11 @@ const AddService = () => {
 
     }
     return (
-        <div className='md:mx-24 sm:mx-16'>
+        <div>
+            <Helmet>
+                <title>Dream Explorer Add Service</title>
+            </Helmet>
+            <div className='md:mx-24 sm:mx-16'>
             <form onSubmit={handleAddService}>
                 <h4 className="text-4xl mt-28 sm:mt-32">Adding a service </h4>
                 <div className='grid  sm:grid-cols-1 mt-3'>
@@ -79,6 +84,7 @@ const AddService = () => {
                 <textarea name='description' className="textarea textarea-bordered w-full h-24" placeholder="Service Description"></textarea>
                 <input className="my-3 btn btn-outline btn-gray" type="submit" value="Add Service" />
             </form>
+        </div>
         </div>
     );
 };

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import AllOrderDetail from './AllOrderDetail';
 import OrderRow from '../Orders/OrderRow';
 import { data } from 'autoprefixer';
+import { Helmet } from 'react-helmet-async';
 
 const AllOrders = () => {
     const [orders, setOrders] = useState([]);
@@ -48,7 +49,11 @@ const AllOrders = () => {
         })
     }
     return (
-        <div className='mt-28 sm:mt-32 mx-12'>
+        <div>
+            <Helmet>
+                <title>Dream Explorer All Orders</title>
+            </Helmet>
+            <div className='mt-28 sm:mt-32 mx-12'>
             <h4 className='text-xl mb-3'>ORDERS: {orders.length}</h4>
             <div className="overflow-x-auto">
   <table className="table">
@@ -69,6 +74,7 @@ const AllOrders = () => {
         }
     </tbody>
     </table>
+        </div>
         </div>
         </div>
     );
