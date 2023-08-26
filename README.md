@@ -26,7 +26,7 @@ Explore the world with us and turn your travel dreams into reality. Dream Explor
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/your-username/dream-explorer.git`
+1. Clone the repository: `https://github.com/HemelHossain/dream-explorer-client.git`
 2. Navigate to the project directory: `cd dream-explorer`
 3. Install dependencies: `npm install`
 4. Set up environment variables: Create a `.env` file based on `.env.example` and add your configuration details.
