@@ -63,7 +63,7 @@ const SignUp = () => {
             <Helmet>
                 <title>Dream Explorer Sign up</title>
             </Helmet>
-            <div className='w-2/5 mx-auto my-24 '>
+            <div className='md:w-2/5 mx-auto my-24 sm:w-3/5 xs:w-4/5 mt-36'>
                 <form onSubmit={handleSignUp}  className='bg-gray-100 shadow-lg w-full rounded-xl p-5' action="">
                     <h1 className='text-2xl text-center font-bold mb-4'>Create an Account</h1>
                     <div>
