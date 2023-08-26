@@ -44,7 +44,7 @@ window.addEventListener('scroll', () => {
 
     return (
         <div>
-            <nav className='header fixed text-black top-0 right-0 left-0 z-50 p-4 '>
+            <nav className='header fixed text-black top-0 right-0 left-0 z-50 p-4 md:px-24'>
                 <div className='flex container justify-between items-center mx-auto'>
                     <div>
                         <img className='w-40 h-10' src={image4} alt="" />
