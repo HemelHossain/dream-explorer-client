@@ -21,7 +21,6 @@ Explore the world with us and turn your travel dreams into reality. Dream Explor
 - Frontend: HTML, CSS, JavaScript, React
 - Backend: Node.js, Express
 - Database: MongoDB
-- Payment Integration: Stripe
 - Hosting: Vercel
 
 ## Getting Started
